@@ -1,0 +1,119 @@
+body {
+  font-family: Menlo, Consolas, monospace;
+  color: #444;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+
+.divwidth {
+  float: left;
+}
+.spanhead {
+  display: inline-block;
+  background-color: #e5dcc3;
+  width: 100%;
+  text-align: right;
+  font-size: 10px;
+}
+#first,
+#second,
+#third {
+  float: left;
+}
+.ulcls {
+  list-style-type: none;
+  width: 70%;
+}
+
+.ulcl {
+  list-style-type: none;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+
+.addSign {
+  text-align: left;
+}
+.dateAlign {
+  text-align: right;
+}
+
+.before {
+  content: "\002B";
+}
+
+.after {
+  content: "\005F";
+}
+.arrowA {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-flex;
+  padding: 3px;
+  position: absolute;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+textarea {
+  border-style: none;
+  border-color: Transparent;
+  wrap: "hard";
+  width: 100%;
+  max-width: 100%;
+}
+
+.divwidth {
+  float: left;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 75%;
+}
+.columnDate {
+  float: right;
+  border: 1px solid black;
+  font-size: 11px;
+}
+
+.red-box {
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #bb0c0c;
+  bottom: 200px;
+  left: 200px;
+}
+
+.box {
+  display: inline-flex;
+}
+.box > *:first-child {
+  align-self: stretch;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
